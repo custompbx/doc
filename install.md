@@ -1,3 +1,4 @@
+# Installation Guide
 1. Get FreeSWITCH
 2. Get Postgres
 
