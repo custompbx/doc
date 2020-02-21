@@ -1,5 +1,5 @@
 # CustomPBX doc
-CustomPBX is under development Web GUI for FreeSWITCH.
+CustomPBX is under development Web GUI for FreeSWITCH. Provide pure FreeSWITCH experience and can be set on existing systems.
 
 Requirements:  
 OS Linux  

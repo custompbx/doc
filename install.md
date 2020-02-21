@@ -81,10 +81,12 @@
 
 9. For import Directory go to Directory>Domains andpres import - or Add new domain from scratch or xml.  
     ![directory import](img/directory_import.png)
+    
     I case imort you will get imported all domains, users, groups and gateways at one time. In case you need to reimport just remove all domains to button import appear.  
     Remember in case domain not exists in CustomPBX it will return Not Found and FreeSWITCH will look it in XML config files.
 
-10. With Modules and Dialplan all doing in a similar way.
-    ![manage modules](img/modules_1.png)   
+10. With Modules and Dialplan all doing in a similar way.  
+    ![manage modules](img/modules_1.png)
+    
     ![manage dialplan](img/dialplan_1.png)  
     
