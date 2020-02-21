@@ -85,7 +85,6 @@
     Remember in case domain not exists in CustomPBX it will return Not Found and FreeSWITCH will look it in XML config files.
 
 10. With Modules and Dialplan all doing in a similar way.
-    ![manage modules](img/modules_1.png)
-    ![manage dialplan](img/dialplan_1.png)
+    ![manage modules](img/modules_1.png)   
+    ![manage dialplan](img/dialplan_1.png)  
     
-
