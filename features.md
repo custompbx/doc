@@ -11,3 +11,4 @@ Single-page App with:
 7. FS logs DB collector.
 8. CDR viewer.
 9. fs_cli interface.
+10. HEP/EEP collector/viewer
