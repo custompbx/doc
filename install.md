@@ -7,7 +7,7 @@
     sudo -u postgres createuser <username>
     sudo -u postgres createdb <dbname>
     sudo -u postgres psql -c "ALTER USER <username> WITH ENCRYPTED PASSWORD '<password>'"
-    sudo -u postgres psql -c "ALTER ROLE '<username>' WITH LOGIN"
+    sudo -u postgres psql -c "ALTER ROLE <username> WITH LOGIN"
     sudo -u postgres psql -c "GRANT all PRIVILEGES ON DATABASE <database> TO <username>"
     ```
 
