@@ -1,5 +1,6 @@
-# CustomPBX doc
-CustomPBX (under development) API server and Web GUI for FreeSWITCH. Provide pure FreeSWITCH experience and can be set on existing systems.
+# CustomPBX documentation
+### FreeSwitch API and Web Graphical user interface (GUI)
+CustomPBX (under development) API server and Web GUI for FreeSWITCH. Provide pure FreeSWITCH experience and can be installed on existing systems with importing existing configuration.
 
 Requirements:  
 OS Linux (amd64)
