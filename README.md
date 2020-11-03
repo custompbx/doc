@@ -5,7 +5,7 @@ CustomPBX (under development) API server and Web GUI for FreeSWITCH. Provide pur
 ![new password](img/Diagram1.png)
 
 Requirements:  
-OS Linux (amd64)
+OS Linux (amd64)  
 FreeSWITCH  
 Postgres  
 
