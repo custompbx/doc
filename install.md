@@ -1,4 +1,5 @@
 # Installation Guide
+0. Get [Compiled CustomPbx binary](https://github.com/CustomPBX/cpbx/tree/master/bin)
 1. Get FreeSWITCH
 2. Get Postgres
 
@@ -11,7 +12,7 @@
     sudo -u postgres psql -c "GRANT all PRIVILEGES ON DATABASE <database> TO <username>"
     ```
 
-4. Put cpbx binary file to server with `config.json` or just run and stop cpbx to create it.
+4. Put [cpbx](https://github.com/CustomPBX/cpbx/tree/master/bin) binary file to server with `config.json` or just run and stop cpbx to create it.
     ```json
     {
         "freeswitch": {
