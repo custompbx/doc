@@ -1,9 +1,9 @@
 # Installation Guide
-0. Get [Compiled CustomPbx binary](https://github.com/CustomPBX/cpbx/tree/master/bin)
-1. Get FreeSWITCH
-2. Get Postgres
+1. Get [Compiled CustomPbx binary](https://github.com/custompbx/custompbx/releases)
+2. Get FreeSWITCH
+3. Get Postgres
 
-3. Create Postgres User And Database  
+4. Create Postgres User And Database  
     ```bash
     sudo -u postgres createuser <username>
     sudo -u postgres createdb <dbname>
@@ -12,7 +12,7 @@
     sudo -u postgres psql -c "GRANT all PRIVILEGES ON DATABASE <database> TO <username>"
     ```
 
-4. Put [cpbx](https://github.com/CustomPBX/cpbx/tree/master/bin) binary file to server with `config.json` or just run and stop cpbx to create it.
+4. Put [cpbx](https://github.com/custompbx/custompbx/releases) binary file to server with `config.json` or just run and stop cpbx to create it.
     ```json
     {
         "freeswitch": {
@@ -50,11 +50,11 @@
     }
     ```
 
-5. Change parameters accordingly your setup. To connect cpbx to FreeSWITCH and DB.  
+5. Change parameters accordingly your setup. To connect cpbx to FreeSWITCH and DB.
 6. To connect FreeSWITCH to cbpx make sure `mod_xml_curl` is uncommented in `modules.conf` at FreeSWITCH configs directory. Put `<param name="gateway-url" value="https://<xml_curl_server.host>:<xml_curl_server.port>/<xml_curl_server.route>" bindings="configuration|directory|dialplan"/>` and load or reload xml_curl after it.  
-    When its done run cbpx again.
-    
-    Common on start output:  
+   When its done run cbpx again.
+
+   Common on start output:
     ```bash
     CustomPBX development version: 0.0.1
     Starting...
@@ -72,24 +72,24 @@
     ```
 
 7. Now open https://\<webserver HOST>:\<webserver PORT>/cweb
-    Default credentials is Login: admin, Password: admin.  
-    ![login](img/login.png)
-    
-    You will see dashboard as first page more data will appear on it after you import or create direcoty and sofia configs.
+   Default credentials is Login: admin, Password: admin.  
+   <img alt="login" src="https://github.com/custompbx/doc/raw/master/img/login.png" width="900">
+
+   You will see dashboard as first page more data will appear on it after you import or create direcoty and sofia configs.
 8. For change default password go to settings as shown at screen shot.  
-    ![new password](img/change_password.png)
+   <img alt="new password" src="https://github.com/custompbx/doc/raw/master/img/change_password.png" width="1000">
 
     Now time to set up or import FreeSWITCH configs.  
     ⚠WARNING: on importing configs right from FreeSWITCH all global variables will be resolved into their values.
 
 9. For import Directory go to Directory>Domains andpres import - or Add new domain from scratch or xml.  
-    ![directory import](img/directory_import.png)
-    
-    I case imort you will get imported all domains, users, groups and gateways at one time. In case you need to reimport just remove all domains to button import appear.  
-    Remember in case domain not exists in CustomPBX it will return Not Found and FreeSWITCH will look it in XML config files.
+   <img alt="directory import" src="https://github.com/custompbx/doc/raw/master/img/directory_import.png" width="1000">
+
+   I case imort you will get imported all domains, users, groups and gateways at one time. In case you need to reimport just remove all domains to button import appear.  
+   Remember in case domain not exists in CustomPBX it will return Not Found and FreeSWITCH will look it in XML config files.
 
 10. With Modules and Dialplan all doing in a similar way.  
-    ![manage modules](img/modules_1.png)
-    
-    ![manage dialplan](img/dialplan_1.png)  
+    <img alt="manage modules" src="https://github.com/custompbx/doc/raw/master/img/modules_1.png" width="1000">
+
+    <img alt="manage dialplan" src="https://github.com/custompbx/doc/raw/master/img/dialplan_1.png" width="1000">  
     
